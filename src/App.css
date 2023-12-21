@@ -7,7 +7,7 @@
 
 .greeting-container {
   font-size: 70px;
-  margin-bottom: 30px;
+  margin: 30px;
   padding: 20px;
   background-color: lightseagreen;
   border-radius: 30px;
@@ -17,6 +17,7 @@
   display: flex;
   gap: 20px;
   font-size: xx-large;
+  margin: 30px;
 }
 
 .input-container {
