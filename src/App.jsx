@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 
+
 function App() {
   const [inputMessage, setInputMessage] = useState("");
   const [greetingMessage, setGreetingMessage] = useState("Greeting Message");
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+
       <div className="greeting-container">{greetingMessage}</div>
       <div className="input-container">
         <label htmlFor="greeting-message">New Greeting Message</label>
