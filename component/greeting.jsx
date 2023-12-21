@@ -6,6 +6,7 @@ function Greeting() {
   const [greetingInputText, setGreetingInputText] = //for greeting 2
     useState("Greeting Message");
   const [inputValue, setInputValue] = useState(""); //for greeting 2
+
   //for greeting 2
   const handleInputChange = (event) => {
     // Update the input value as you type
