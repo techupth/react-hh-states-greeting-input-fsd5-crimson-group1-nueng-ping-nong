@@ -1,31 +1,32 @@
 import "./App.css";
 import { useState } from "react";
 
-
 function App() {
-  const [inputMessage, setInputMessage] = useState("");
-  const [greetingMessage, setGreetingMessage] = useState("Greeting Message");
-
-  const submitMessage = () => {
-    setGreetingMessage(inputMessage);
-  };
-
+  let [message, setMessage] = useState("");
+  let [putMessage, setPutMessage] = useState("Greeting Message");
   return (
     <div className="App">
-
-      <div className="greeting-container">{greetingMessage}</div>
+      <div className="greeting-container">{putMessage}</div>
       <div className="input-container">
         <label htmlFor="greeting-message">New Greeting Message</label>
         <input
           id="greeting-message"
           type="text"
-          value={inputMessage}
-          onChange={(event) => setInputMessage(event.target.value)}
+          onChange={(event) => {
+            setMessage(event.target.value);
+          }}
+          value={message}
         />
       </div>
 
       <div className="buttons">
-        <button onClick={submitMessage}>Update text</button>
+        <button
+          onClick={() => {
+            setPutMessage(message);
+          }}
+        >
+          Update text
+        </button>
       </div>
     </div>
   );
